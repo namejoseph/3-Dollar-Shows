@@ -295,7 +295,8 @@ footer>.social-media a {
 footer {
     background: #333;
     color: white;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
     margin: 0 auto;
     display: flex;
@@ -347,9 +348,8 @@ p {
 }
 
 .footer-logo {
-    width: 200px;
-    max-width: 33%;
-    height: auto; /* Maintain aspect ratio */
+    max-width: 200px;
+    width: 33%;
 }
 
 .footer-text {
