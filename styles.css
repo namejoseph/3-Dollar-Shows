@@ -117,8 +117,11 @@ nav {
 .social-media a {
     color: #cf7389;
     text-decoration: none;
-    margin-left: 20px;
     font-size: 40px;
+}
+
+.social-media a:nth-child(2) {
+    margin-left: 20px;
 }
 
 footer>.social-media a {
