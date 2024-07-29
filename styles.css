@@ -35,6 +35,73 @@ header {
     }
 }
 
+/* Conditional styles for wide screens with width twice the height */
+@media (min-aspect-ratio: 2/1) {
+    header {
+        min-height: 100vh;
+        /* Adjust as needed */
+    }
+}
+
+/* Conditional styles for wide screens with width twice the height */
+@media (min-aspect-ratio: 2.25/1) {
+    header {
+        min-height: 110vh;
+        /* Adjust as needed */
+    }
+}
+
+/* Conditional styles for wide screens with width twice the height */
+@media (min-aspect-ratio: 2.5/1) {
+    header {
+        min-height: 130vh;
+        /* Adjust as needed */
+    }
+}
+
+/* Conditional styles for wide screens with width twice the height */
+@media (min-aspect-ratio: 3/1) {
+    header {
+        min-height: 150vh;
+        /* Adjust as needed */
+    }
+}
+
+/* Conditional styles for wide screens with width twice the height */
+@media (min-aspect-ratio: 3.25/1) {
+    header {
+        min-height: 170vh;
+        /* Adjust as needed */
+    }
+}
+
+/* Conditional styles for wide screens with width twice the height */
+@media (min-aspect-ratio: 3.5/1) {
+    header {
+        min-height: 200vh;
+        /* Adjust as needed */
+    }
+}
+
+/* Conditional styles for wide screens with width twice the height */
+@media (min-aspect-ratio: 4/1) {
+    header {
+        min-height: 240vh;
+        /* Adjust as needed */
+    }
+}
+
+.responsive-title {
+    display: none;
+}
+
+/* Conditional styles for wide screens with width twice the height */
+@media (min-aspect-ratio: 2/1) {
+    .responsive-title {
+        display: inline;
+    }
+}
+
 /* Default (Desktop) Layout */
 nav {
     display: flex;
@@ -348,8 +415,8 @@ p {
 }
 
 .footer-logo {
-    max-width: 200px;
     width: 33%;
+    max-width: 200px;
 }
 
 .footer-text {
