@@ -7,6 +7,14 @@ body {
 .container {
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all child elements horizontally */
+}
+
+.container-nav {
+    width: 90%;
+    margin: 0 auto;
 }
 
 header {
@@ -462,4 +470,91 @@ h2 {
     color: white;
     font-size: 20px;
     font-family: "merel", sans-serif;
+}
+
+.org-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.org-box {
+    flex: 1 1 calc(25% - 50px); /* 4 columns on larger screens */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px #eee solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.075); /* Adjust values for subtle effect */
+    padding: 20px;
+}
+
+.org-box h2 {
+    font-size: 1.25em;
+    margin: 0 0 10px;
+}
+
+.org-social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.org-social-icons i {
+    font-size: 1.5em;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.org-social-icons i:hover {
+    color: #0077ff; /* Change this color for hover effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .org-box {
+        flex: 1 1 calc(33.33% - 20px); /* 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .org-box {
+        flex: 1 1 calc(50% - 20px); /* 2 columns on small screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .org-box {
+        flex: 1 1 100%; /* 1 column on extra small screens */
+    }
+}
+
+.orgs {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.orgs a {
+    color: #787ea2;
+    text-decoration: none;
+}
+
+.orgs a:hover {
+    color: #cf7389;
+}
+
+.beneficiary-logo {
+    width:200px;
+    max-width: 90%;
+}
+
+.beneficiary-logo:hover {
+    opacity: 75%;
 }
