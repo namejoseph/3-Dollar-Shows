@@ -22,82 +22,27 @@ header {
     background-size: cover;
     color: white;
     padding: 40px 0;
-    min-height: 90vh;
+    min-height: clamp(50vh, 80vh, 100vh);
 }
 
-@media (max-width: 1200px) {
-    header {
-        min-height: 70vh;
-    }
-}
-
-@media (max-width: 800px) {
-    header {
-        min-height: 55vh;
-    }
-}
-
-@media (max-width: 600px) {
-    header {
-        min-height: 40vh;
-    }
-}
-
-/* Conditional styles for wide screens with width twice the height */
 @media (min-aspect-ratio: 2/1) {
     header {
-        min-height: 100vh;
-        /* Adjust as needed */
+        min-height: 90vh;
     }
 }
 
-/* Conditional styles for wide screens with width twice the height */
-@media (min-aspect-ratio: 2.25/1) {
-    header {
-        min-height: 110vh;
-        /* Adjust as needed */
-    }
-}
-
-/* Conditional styles for wide screens with width twice the height */
-@media (min-aspect-ratio: 2.5/1) {
-    header {
-        min-height: 130vh;
-        /* Adjust as needed */
-    }
-}
-
-/* Conditional styles for wide screens with width twice the height */
 @media (min-aspect-ratio: 3/1) {
     header {
-        min-height: 150vh;
-        /* Adjust as needed */
+        min-height: 100vh;
     }
 }
 
-/* Conditional styles for wide screens with width twice the height */
-@media (min-aspect-ratio: 3.25/1) {
+@media (max-width: 1024px) {
     header {
-        min-height: 170vh;
-        /* Adjust as needed */
+        min-height: min(70vh, 600px);
     }
 }
 
-/* Conditional styles for wide screens with width twice the height */
-@media (min-aspect-ratio: 3.5/1) {
-    header {
-        min-height: 200vh;
-        /* Adjust as needed */
-    }
-}
-
-/* Conditional styles for wide screens with width twice the height */
-@media (min-aspect-ratio: 4/1) {
-    header {
-        min-height: 240vh;
-        /* Adjust as needed */
-    }
-}
 
 .responsive-title {
     display: none;
