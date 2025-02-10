@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all child elements horizontally */
+}
+
+header {
+    background: url('3ds-website-img-header.jpg') no-repeat center bottom;
+    background-size: cover;
+    color: white;
+    padding: 40px 0;
+    min-height: 100vh;
+}
+
+/* Width-based media queries – keep these as they were working */
+@media (max-width: 1200px) {
+    header {
+        min-height: 80vh;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        min-height: 65vh;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        min-height: 50vh;
+    }
+}
+
+
+/* Keeps the nav at the top */
+.container-nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 20px; /* Add some padding to prevent content from touching edges */
+}
+
+.responsive-title {
+    display: none;
+}
+
+/* Conditional styles for wide screens with width twice the height */
+@media (min-aspect-ratio: 2/1) {
+    .responsive-title {
+        display: inline;
+    }
+}
+
+/* Default (Desktop) Layout */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "oskar", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #787ea2;
+}
+
+.nav-links li a:hover {
+    color: #ddf93e;
+}
+
+.hamburger {
+    display: none;
+    /* Default is hidden on larger screens */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    /* Adjust width for visibility */
+    height: 25px;
+    /* Adjust height for visibility */
+    z-index: 1001;
+    /* Ensure it's above other content */
+    position: relative;
+    background-color: transparent;
+    /* Ensure background is not hiding the button */
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    /* Ensure width is set */
+    height: 4px;
+    /* Increased height for better visibility */
+    background-color: #787ea2;
+    /* Ensure color contrasts with the background */
+    margin: 1.75px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media a {
+    color: #cf7389;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.social-media a:nth-child(2) {
+    margin-left: 20px;
+}
+
+footer>.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 40px;
+}
+
+.social-media a:hover {
+    color: #ddf93e;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+
+    nav {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+        /* Hide navigation links on small screens by default */
+        flex-direction: column;
+        background-color: #f9f9f9;
+        /* Background color for the dropdown menu */
+        position: absolute;
+        top: 120px;
+        /* Adjust to ensure dropdown is below the hamburger button */
+        /* Adjust based on header height */
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        /* Ensure it's above other content */
+        align-items: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+        /* Show navigation links when toggled */
+    }
+
+    .hamburger {
+        display: flex;
+        /* Show hamburger button on small screens */
+        margin-bottom: 20px;
+        height: auto;
+        /* Ensure button scales properly */
+        z-index: 1001;
+        /* Ensure it's above the dropdown menu */
+    }
+
+    .social-media {
+        order: 1;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+.about {
+    background-color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .about {
+        padding: 50px 0;
+    }
+}
+
+.video-gallery {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.video-container {
+    flex: 1 1 calc(33.333% - 40px);
+    /* Adjust the width and margin */
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: #000;
+    /* Background color for the caption */
+    color: #fff;
+    /* Text color for the caption */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+.video-gallery .videos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.caption {
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 800px) {
+    .video-container {
+        flex: 1 1 100%;
+        /* Full width on smaller screens */
+    }
+}
+
+.event {
+    padding: 50px 0;
+    background-color: #fafafa;
+}
+
+.event-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.event-content .artwork {
+    width: 35%;
+}
+
+.event-content .info {
+    width: 55%;
+}
+
+.event-artwork {
+    width: 100%;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 800px) {
+    .event-content {
+        flex-direction: column;
+        gap: 20px;
+        /* Adjust gap as needed */
+    }
+
+    .event-content .artwork,
+    .event-content .info {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.press {
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact {
+    background-color: #fafafa;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact a {
+    color: #787ea2;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #cf7389;
+}
+
+p {
+    color: black;
+    font-family: "merel", sans-serif;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.main-message {
+    font-family: "merel", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 800px) {
+    .main-message {
+        font-size: 24px;
+    }
+}
+
+.footer-logo {
+    width: 33%;
+    max-width: 200px;
+}
+
+.footer-text {
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    background-color: #787ea2;
+    /* Blue color, adjust as needed */
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-family: "merel", sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    opacity: 50%;
+    /* Darker shade of blue on hover, adjust as needed */
+}
+
+.oskar-font {
+    font-family: "oskar", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 48px;
+    font-family: "merel", sans-serif;
+    margin-top: 0;
+    color: black;
+}
+
+.caption {
+    color: white;
+    font-size: 20px;
+    font-family: "merel", sans-serif;
+}
+
+.org-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    justify-content: center; /* Keeps last row centered */
+}
+
+.org-box {
+    flex: 1 1 calc(25% - 50px); /* 4 columns on larger screens */
+    max-width: calc(25% - 40px);
+    min-width: 200px; /* Ensures it doesn’t shrink too much */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px #eee solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.075); /* Adjust values for subtle effect */
+    padding: 20px;
+}
+
+.org-box:nth-last-child(1) {
+    flex: 1 1 calc(25% - 40px); 
+    max-width: calc(25% - 40px);
+}
+
+.org-box h2 {
+    font-size: 1.25em;
+    margin: 0 0 10px;
+}
+
+.org-social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.org-social-icons i {
+    font-size: 1.5em;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.org-social-icons i:hover {
+    color: #0077ff; /* Change this color for hover effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .org-box {
+        flex: 1 1 calc(33.33% - 20px); /* 3 columns on medium screens */
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .org-box {
+        flex: 1 1 calc(50% - 20px); /* 2 columns on small screens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 400px) {
+    .org-box {
+        flex: 1 1 100%; /* 1 column on extra small screens */
+        max-width: 100%;
+    }
+}
+
+.orgs {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.orgs a {
+    color: #787ea2;
+    text-decoration: none;
+}
+
+.orgs a:hover {
+    color: #cf7389;
+}
+
+.beneficiary-logo {
+    width:200px;
+    max-width: 90%;
+}
+
+.beneficiary-logo:hover {
+    opacity: 75%;
+}
