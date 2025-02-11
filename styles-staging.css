@@ -23,28 +23,40 @@ header {
     background-size: cover;
     color: white;
     padding: 40px 0;
-    min-height: calc(100vh - 80px); /* Reduces height dynamically */
+    min-height: 100vh; /* Keep full height by default */
 }
 
-/* Width-based media queries – refine using math */
+/* Adjust header height for different screen sizes */
 @media (max-width: 1200px) {
     header {
-        min-height: calc(80vh - 60px);
+        min-height: 80vh;
     }
 }
 
 @media (max-width: 900px) {
     header {
-        min-height: calc(65vh - 40px);
+        min-height: 65vh;
     }
 }
 
 @media (max-width: 600px) {
     header {
-        min-height: calc(50vh - 30px);
+        min-height: 50vh;
     }
 }
 
+/* Aspect ratio-based adjustments (only necessary for very wide screens) */
+@media (min-aspect-ratio: 2/1) {
+    header {
+        min-height: 100vh;
+    }
+}
+
+@media (min-aspect-ratio: 3/1) {
+    header {
+        min-height: 150vh;
+    }
+}
 
 /* Keeps the nav at the top */
 .container-nav {
@@ -452,9 +464,8 @@ h2 {
     padding: 20px;
 }
 
-.org-box:nth-last-child(1) {
-    flex: 1 1 calc(25% - 40px); 
-    max-width: calc(25% - 40px);
+.org-box:nth-last-child(1):nth-child(odd) {
+    flex-grow: 1;
 }
 
 .org-box h2 {
