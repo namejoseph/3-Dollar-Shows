@@ -5,36 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$3 Shows | Community • Collaboration • Cross Promotion</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-staging.css">
     <link rel="stylesheet" href="https://use.typekit.net/kae4isj.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         crossorigin="anonymous" />
 
     <script defer src="script.js"></script>
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="$3 Shows">
+    <meta property="og:description" content="Community, Collaboration, Cross Promotion - Join the next $3 Show!">
+    <meta property="og:image" content="https://3dollarshows.com/3ds-website-img-thumbnail.jpg">
+    <meta property="og:url" content="https://3dollarshows.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="$3 Shows">
+    <meta name="twitter:description" content="Community, Collaboration, Cross Promotion - Join the next $3 Show!">
+    <meta name="twitter:image" content="https://3dollarshows.com/3ds-website-img-thumbnail.jpg">
+
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="$3 Shows" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
 </head>
 
 <body>
     <header>
-        <div class="container-nav">
-            <nav>
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html" class="responsive-title">$3 Shows</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#event">Next Event</a></li>
-                    <li><a href="#videos">Videos</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                </ul>
-                <div class="social-media">
-                    <a href="https://www.facebook.com/3dollarshows" target="_blank" class="fab fa-facebook"></a>
-                    <a href="https://www.instagram.com/3dollarshows" target="_blank" class="fab fa-instagram"></a>
-                </div>
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="responsive-title">$3 Shows</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#event">Next Event</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="https://www.facebook.com/3dollarshows" target="_blank" class="fab fa-facebook"></a>
+                <a href="https://www.instagram.com/3dollarshows" target="_blank" class="fab fa-instagram"></a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="header-layer-texture"></div>
+        <div class="header-layer-art"><img src="3ds-website-img-header-art.gif" class="character-illustration"></div>
     </header>
 
     <section id="about" class="about">
@@ -59,8 +78,8 @@
                     <h2>SEE YOU AT THE NEXT $3 SHOWS</h2>
                     <p>Date: Saturday, April 19<br>Location: TBA</p>
                     <p>SAVE THE DATE<br>
-                    <!--<p>$3 shows Benefiting LoveHub ATX ft.<br>-->
-                    <!--<p>Short Life, Ben Buck, Abe The Ambassador, Chucky Blk, Locuust, Free Bloo and Freak, Muggzy Flowz, StormShadow, Dr. Bobby Banner, MPC, Gleaming and Damascan Daydreams</p>
+                        <!--<p>$3 shows Benefiting LoveHub ATX ft.<br>-->
+                        <!--<p>Short Life, Ben Buck, Abe The Ambassador, Chucky Blk, Locuust, Free Bloo and Freak, Muggzy Flowz, StormShadow, Dr. Bobby Banner, MPC, Gleaming and Damascan Daydreams</p>
                     <p>Price: $3, plus VIP available!</p>
                         <p>ALL AGES and Family Friendly! Art, Music, Food, Special guest speaks and performances!<br>
 Interactive community booths plus an exciting raffle!
@@ -75,6 +94,13 @@ Interactive community booths plus an exciting raffle!
 
     <section id="videos" class="video-gallery">
         <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/2_hFjhBhHgU?si=I27DsvJNb1Dy0_-B" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="caption">DADALAB<br> 12/14/25<br> Benefit for Love Hub ATX</div>
+        </div>
+        <div class="video-container">
             <iframe src="https://www.youtube.com/embed/QJMJaX3x4PQ?si=I27DsvJNb1Dy0_-B" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
@@ -88,12 +114,12 @@ Interactive community booths plus an exciting raffle!
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div class="caption">SWAN DIVE<br> 9/20/14<br> Benefit for Lobo Sucio Creative</div>
         </div>
-        <div class="video-container">
+        <!--<div class="video-container">
             <iframe src="https://www.youtube.com/embed/rkEp4EL65eQ?si=7K6nfi1GCNgt7978" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <div class="caption">SWAN DIVE<br> 12/12/14<br> Benefit for Ten Thousand Villages</div>
+            <div class="caption">SWAN DIVE<br> 12/12/14<br> Benefit for Ten Thousand Villages</div>-->
         </div>
     </section>
 
@@ -102,106 +128,146 @@ Interactive community booths plus an exciting raffle!
             <h2>ORGANIZATIONS WE'VE RAISED MONEY FOR</h2>
             <div class="org-grid-container">
 
-                <!-- ATTENDANCE RECORDS -->
+                <!-- LOVE HUB -->
                 <div class="org-box social-media">
-                    <a href="https://www.awesomefoundation.org/en/projects/25517-attendance-records-inspiring-austin-s-next-generation-of-musicians" target="_blank"><img src="orgs/3ds-website-logo-attendancerecords.jpg" class="beneficiary-logo"></a>
+                    <a href="https://www.instagram.com/lovehubatx" target="_blank"><img
+                            src="orgs/3ds-website-logo-lovehub.jpg" class="beneficiary-logo"></a>
                     <div class="org-social-media">
-                        <a href="https://www.facebook.com/AttendanceRecords/" target="_blank" class="fab fa-facebook main-message"></a>
+                        <a href="https://www.instagram.com/lovehubatx" target="_blank"
+                            class="fab fa-instagram main-message"></a>
                     </div>
                 </div>
-            
+
+                <!-- ATTENDANCE RECORDS -->
+                <div class="org-box social-media">
+                    <a href="https://www.awesomefoundation.org/en/projects/25517-attendance-records-inspiring-austin-s-next-generation-of-musicians"
+                        target="_blank"><img src="orgs/3ds-website-logo-attendancerecords.jpg"
+                            class="beneficiary-logo"></a>
+                    <div class="org-social-media">
+                        <a href="https://www.facebook.com/AttendanceRecords/" target="_blank"
+                            class="fab fa-instagram main-message"></a>
+                    </div>
+                </div>
+
                 <!-- REFUGEE SERVICES OF TEXAS -->
                 <div class="org-box social-media">
-                    <a href="https://www.immigrationadvocates.org/nonprofit/legaldirectory/organization.393322-Refugee_Services_of_Texas_Austin_Office" target="_blank"><img src="orgs/3ds-website-logo-refugeesoftx.jpg" class="beneficiary-logo"></a>
+                    <a href="https://www.immigrationadvocates.org/nonprofit/legaldirectory/organization.393322-Refugee_Services_of_Texas_Austin_Office"
+                        target="_blank"><img src="orgs/3ds-website-logo-refugeesoftx.jpg" class="beneficiary-logo"></a>
                     <div class="org-social-media">
-                        <a href="https://www.facebook.com/immigrationadvocates" target="_blank" class="fab fa-facebook main-message"></a>
+                        <a href="https://www.facebook.com/immigrationadvocates" target="_blank"
+                            class="fab fa-facebook main-message"></a>
                     </div>
                 </div>
 
                 <!-- AUSTIN CHILDREN'S SHELTER -->
                 <div class="org-box social-media">
-                   <a href="https://www.safeaustin.org/" target="_blank"><img src="orgs/3ds-website-logo-austinschildrenshelter.jpg" class="beneficiary-logo"></a>
+                    <a href="https://www.safeaustin.org/" target="_blank"><img
+                            src="orgs/3ds-website-logo-austinschildrenshelter.jpg" class="beneficiary-logo"></a>
                     <div class="org-social-media">
-                        <a href="https://www.facebook.com/SAFEatx" target="_blank" class="fab fa-facebook main-message"></a>
+                        <a href="https://www.facebook.com/SAFEatx" target="_blank"
+                            class="fab fa-facebook main-message"></a>
                     </div>
                 </div>
 
                 <!-- TEN THOUSAND VILLAGES -->
                 <div class="org-box social-media">
-                    <a href="https://www.tenthousandvillages.com/a/store-locator/austin.html" target="_blank"><img src="orgs/3ds-website-logo-tenthousandvillages.jpg" class="beneficiary-logo"></a>
+                    <a href="https://www.tenthousandvillages.com/a/store-locator/austin.html" target="_blank"><img
+                            src="orgs/3ds-website-logo-tenthousandvillages.jpg" class="beneficiary-logo"></a>
                     <div class="org-social-media">
-                        <a href="https://www.facebook.com/TenThousandVillagesAustin" target="_blank" class="fab fa-facebook main-message"></a>
-                        <a href="https://www.instagram.com/villages_austin/" target="_blank" class="fab fa-instagram main-message"></a>
+                        <a href="https://www.facebook.com/TenThousandVillagesAustin" target="_blank"
+                            class="fab fa-facebook main-message"></a>
+                        <a href="https://www.instagram.com/villages_austin/" target="_blank"
+                            class="fab fa-instagram main-message"></a>
                     </div>
                 </div>
 
-                 <!-- GROUNDWORK MUSIC PROJECT -->
-                 <div class="org-box social-media">
-                    <a href="https://www.groundworkmusic.org/" target="_blank"><img src="orgs/3ds-website-logo-groundwork.jpg" class="beneficiary-logo"></a>
+                <!-- GROUNDWORK MUSIC PROJECT -->
+                <div class="org-box social-media">
+                    <a href="https://www.groundworkmusic.org/" target="_blank"><img
+                            src="orgs/3ds-website-logo-groundwork.jpg" class="beneficiary-logo"></a>
                     <div class="org-social-media">
-                        <a href="https://www.facebook.com/groundworkmusicproject/" target="_blank" class="fab fa-facebook main-message"></a>
-                        <a href="https://www.instagram.com/groundworkmusic" target="_blank" class="fab fa-instagram main-message"></a>
+                        <a href="https://www.facebook.com/groundworkmusicproject/" target="_blank"
+                            class="fab fa-facebook main-message"></a>
+                        <a href="https://www.instagram.com/groundworkmusic" target="_blank"
+                            class="fab fa-instagram main-message"></a>
                     </div>
                 </div>
-            
+
                 <!-- LOBO SUCIO CREATIVE -->
                 <div class="org-box social-media">
-                    <a href="https://www.instagram.com/lobosuciocreative" target="_blank"><img src="orgs/3ds-website-logo-lobosucio.jpg" class="beneficiary-logo"></a>
+                    <a href="https://www.instagram.com/lobosuciocreative" target="_blank"><img
+                            src="orgs/3ds-website-logo-lobosucio.jpg" class="beneficiary-logo"></a>
                     <div class="org-social-media">
-                        <a href="https://www.instagram.com/lobosuciocreative" target="_blank" class="fab fa-instagram main-message"></a>
+                        <a href="https://www.instagram.com/lobosuciocreative" target="_blank"
+                            class="fab fa-instagram main-message"></a>
                     </div>
                 </div>
 
                 <!-- DAWA -->
                 <div class="org-box social-media">
-                   <a href="https://www.dawaheals.org/" target="_blank"><img src="orgs/3ds-website-logo-dawa.jpg" class="beneficiary-logo"></a>
+                    <a href="https://www.dawaheals.org/" target="_blank"><img src="orgs/3ds-website-logo-dawa.jpg"
+                            class="beneficiary-logo"></a>
                     <div class="org-social-media">
-                        <a href="https://www.facebook.com/dawaheals" target="_blank" class="fab fa-facebook main-message"></a>
-                        <a href="https://www.instagram.com/dawaheals" target="_blank" class="fab fa-instagram main-message"></a>
+                        <a href="https://www.facebook.com/dawaheals" target="_blank"
+                            class="fab fa-facebook main-message"></a>
+                        <a href="https://www.instagram.com/dawaheals" target="_blank"
+                            class="fab fa-instagram main-message"></a>
                     </div>
                 </div>
 
                 <!-- AUSTIN CREATIVE ALLIANCE -->
                 <div class="org-box social-media">
-                    <a href="https://www.austincreativealliance.org/" target="_blank"><img src="orgs/3ds-website-logo-aca.jpg" class="beneficiary-logo"></a>
+                    <a href="https://www.austincreativealliance.org/" target="_blank"><img
+                            src="orgs/3ds-website-logo-aca.jpg" class="beneficiary-logo"></a>
                     <div class="org-social-media">
-                        <a href="https://www.facebook.com/austincreativea" target="_blank" class="fab fa-facebook main-message"></a>
-                        <a href="https://www.instagram.com/austincreativea/" target="_blank" class="fab fa-instagram main-message"></a>
+                        <a href="https://www.facebook.com/austincreativea" target="_blank"
+                            class="fab fa-facebook main-message"></a>
+                        <a href="https://www.instagram.com/austincreativea/" target="_blank"
+                            class="fab fa-instagram main-message"></a>
                     </div>
                 </div>
 
-                 <!-- AUSTIN MUSIC FOUNDATION -->
-                 <div class="org-box social-media">
-                    <a href="http://austinmusicfoundation.org/home/" target="_blank"><img src="orgs/3ds-website-logo-amf.jpg" class="beneficiary-logo"></a>
+                <!-- AUSTIN MUSIC FOUNDATION -->
+                <div class="org-box social-media">
+                    <a href="http://austinmusicfoundation.org/home/" target="_blank"><img
+                            src="orgs/3ds-website-logo-amf.jpg" class="beneficiary-logo"></a>
                     <div class="org-social-media">
-                        <a href="https://www.facebook.com/austinmusicfoundation/" target="_blank" class="fab fa-facebook main-message"></a>
-                        <a href="https://www.instagram.com/austinmusicfoundation/" target="_blank" class="fab fa-instagram main-message"></a>
+                        <a href="https://www.facebook.com/austinmusicfoundation/" target="_blank"
+                            class="fab fa-facebook main-message"></a>
+                        <a href="https://www.instagram.com/austinmusicfoundation/" target="_blank"
+                            class="fab fa-instagram main-message"></a>
                     </div>
                 </div>
 
                 <!-- ENERGIES BALANCED -->
                 <div class="org-box social-media">
-                   <a href="https://www.energiesbalanced.com/" target="_blank"><img src="orgs/3ds-website-logo-eb.jpg" class="beneficiary-logo"></a>
+                    <a href="https://www.energiesbalanced.com/" target="_blank"><img src="orgs/3ds-website-logo-eb.jpg"
+                            class="beneficiary-logo"></a>
                 </div>
 
                 <!-- DUB ACADEMY -->
                 <div class="org-box social-media">
-                    <a href="https://www.dubacademy.org/" target="_blank"><img src="orgs/3ds-website-logo-dubacademy.jpg" class="beneficiary-logo"></a>
+                    <a href="https://www.dubacademy.org/" target="_blank"><img
+                            src="orgs/3ds-website-logo-dubacademy.jpg" class="beneficiary-logo"></a>
                     <div class="org-social-media">
-                        <a href="https://www.facebook.com/thedubacademy" target="_blank" class="fab fa-facebook main-message"></a>
+                        <a href="https://www.facebook.com/thedubacademy" target="_blank"
+                            class="fab fa-facebook main-message"></a>
                     </div>
                 </div>
 
-                 <!-- SWAN SONGS -->
-                 <div class="org-box social-media">
-                    <a href="https://www.swansongs.org/" target="_blank"><img src="orgs/3ds-website-logo-swansongs.jpg" class="beneficiary-logo"></a>
+                <!-- SWAN SONGS -->
+                <div class="org-box social-media">
+                    <a href="https://www.swansongs.org/" target="_blank"><img src="orgs/3ds-website-logo-swansongs.jpg"
+                            class="beneficiary-logo"></a>
                     <div class="org-social-media">
-                        <a href="https://www.facebook.com/swansongsaustin" target="_blank" class="fab fa-facebook main-message"></a>
-                        <a href="https://www.instagram.com/swansongsaustin/" target="_blank" class="fab fa-instagram main-message"></a>
+                        <a href="https://www.facebook.com/swansongsaustin" target="_blank"
+                            class="fab fa-facebook main-message"></a>
+                        <a href="https://www.instagram.com/swansongsaustin/" target="_blank"
+                            class="fab fa-instagram main-message"></a>
                     </div>
                 </div>
-            
-        </div>
+
+            </div>
     </section>
 
     <section id="contact" class="contact">
